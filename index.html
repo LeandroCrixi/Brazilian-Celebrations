@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brazilian Celebrations: Traditions, Colors & Stories</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        document.documentElement.className += ' js';
+    </script>
 </head>
 
 <body>
-    <nav class="menu">
+    <nav class="menu js-menu">
         <ul>
             <li><a href="#celebrations">Celebrations</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="https://leo-crixi.com/" target="_blank">Dev →</a></li>
         </ul>
     </nav>
 
-    <section class="grid-section celebrations" id="celebrations">
+    <section class="grid-section celebrations js-scroll" id="celebrations">
         <h1 class="title">Brazilian Celebrations: Traditions, Colors & Stories</h1>
 
-        <ul class="celebrations-list">
+        <ul class="celebrations-list js-tabmenu">
             <li><img src="./img/carnaval.png"></li>
             <li><img src="./img/festa-junina.webp"></li>
             <li><img src="./img/ceia_natal.jpeg"></li>
@@ -28,7 +32,7 @@
             <li><img src="./img/pascoa-vendas.jpeg"></li>
         </ul>
 
-        <div class="celebrations-description">
+        <div class="celebrations-description js-tabcontent">
             <section>
                 <h2>Carnaval</h2>
                 <p class="bold">The biggest celebration of joy and culture in Brazil.</p>
@@ -92,9 +96,9 @@
         </div>
     </section>
 
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-scroll" id="faq">
         <h1 class="title">Frequently Asked Questions</h1>
-        <dl class="faq-list">
+        <dl class="faq-list js-accordion">
             <dt>What is the meaning behind Festa Junina costumes?</dt>
             <dd>People dress in clothes inspired by Brazilian countryside culture — straw hats, checkered shirts, and
                 colorful dresses.
@@ -116,7 +120,7 @@
         </dl>
     </section>
 
-    <section class="grid-section contact" id="contact">
+    <section class="grid-section contact js-scroll" id="contact">
         <h1 class="title">Contact</h1>
 
         <ul class="info">
@@ -125,9 +129,9 @@
         </ul>
     </section>
 
-    <footer class="copy">
+    <footer class="copy js-scroll">
         <p>All rights reserved.</p>
-        <p>Website design by <a href="https://leo-crixi.com/" target="_blank">Leo Crixi</a></p>
+        <p>Website designed by <a href="https://leo-crixi.com/" target="_blank">Leo Crixi</a></p>
     </footer>
 
     <script src="./script.js"></script>

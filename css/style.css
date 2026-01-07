@@ -120,6 +120,15 @@ body {
         overflow-y: scroll;
         grid-column: 2;
 
+        & li {
+            cursor: pointer;
+
+            & img {
+                height: 250px;
+                width: 100%;
+            }
+        }
+
         &::-webkit-scrollbar {
             width: 18px;
         }
@@ -225,7 +234,7 @@ body {
     background: var(--highlights);
 
     & p {
-        padding: 30px;
+        padding: 10px;
         font-family: var(--body);
         font-weight: bold;
     }
@@ -242,11 +251,11 @@ body {
         grid-column: 1;
     }
 
-    .menu{
+    .menu {
         margin-top: 0px;
     }
 
-    .copy{
+    .copy {
         margin-bottom: 0px;
     }
 
@@ -254,16 +263,85 @@ body {
         grid-template-columns: 100px 1fr;
         gap: 10px;
 
-        & h1{
+        & h1 {
             font-size: 3rem;
         }
     }
 
-    .celebrations-list {
-        grid-column: 1;
+    .celebrations {
+        & .celebrations-list {
+            grid-column: 1;
+        }
     }
 
-    .faq-list, .info {
+    .faq-list,
+    .info {
         grid-column: 1/3;
     }
+}
+
+.js-tabcontent section {
+    display: none;
+}
+
+.js-tabcontent section.active {
+    display: block !important;
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.js .js-accordion dt {
+    cursor: pointer;
+}
+
+.js .js-accordion dd {
+    display: none;
+}
+
+.js-accordion dt::after {
+    content: '⬎';
+    margin-left: 10px;
+}
+
+.js-accordion dt.active::after {
+    content: '⬏';
+}
+
+.js-accordion dd.active {
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -5px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.js .js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: .3s;
+}
+
+.js .js-scroll.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
