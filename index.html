@@ -13,17 +13,19 @@
   <body>
     <div class="grid-container">
       <nav class="menu js-menu">
-        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
         <ul data-menu="list">
           <li><a href="#celebrations">Celebrations</a></li>
           <li data-dropdown>
             <a href="">About</a>
             <ul class="dropdown-menu">
-                <li><a href="">Company</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Careers</a></li>
+              <li><a href="">Company</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Careers</a></li>
             </ul>
-        </li>
+          </li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a data-modal="open">Login →</a></li>
@@ -200,16 +202,49 @@
         </dl>
       </section>
 
+      <section class="grid-section numbers js-scroll" data-anime="scroll">
+        <h1 class="title">Numbers</h1>
+        <div class="numbers-grid">
+          <div class="number-celebration">
+            <h3>Carnaval</h3>
+            <p>
+              ≈ 2 million people per day attend Rio street celebrations during
+              Carnaval.
+            </p>
+            <span data-number>2000000</span>
+          </div>
+          <div class="number-celebration">
+            <h3>Festa Junina</h3>
+            <p>Caruaru + Campina Grande festivals together attract around 24 million visitors annually (they claim to host the biggest São João festival in the world).</p>
+            <span data-number>24000000</span>
+          </div>
+          <div class="number-celebration">
+            <h3>Natal Brasileiro</h3>
+            <p>
+              200+ million Christmas dinners nationwide
+            </p>
+            <span data-number>210000000</span>
+          </div>
+          <div class="number-celebration">
+            <h3>Réveillon</h3>
+            <p>Copacabana hosts around 3 million people on New Year's Eve.</p>
+            <span data-number>3000000</span>
+          </div>
+          <div class="number-celebration">
+            <h3>Páscoa</h3>
+            <p>Brazil produces/sells over 12 million Easter eggs annually (industrial + artisanal combined easily goes beyond that).</p>
+            <span data-number>12000000</span>
+          </div>
+        </div>
+      </section>
+
       <section class="grid-section contact js-scroll" id="contact">
         <h1 class="title" data-tooltip aria-label="Contact me">Contact</h1>
 
         <ul class="info">
-          <li>
-            <a href="mailto:leandro.crixi@hotmail.com"
-              >leandro.crixi@hotmail.com</a
-            >
-          </li>
+          <li><a href="mailto:leandro.crixi@hotmail.com">leandro.crixi@hotmail.com</a></li>
           <li><a href="https://wa.me/+353834688541">+353 83 468 8541</a></li>
+          <li data-week="1,2,3,4,5" data-time="8, 18">Mon to Fri - 8am to 6pm</li>
         </ul>
       </section>
 

@@ -31,7 +31,7 @@ const initTooltip = () => {
   const onMouseMove = {
     tooltipBox: "",
     element: null,
-    handleEvent() {
+    handleEvent(e) {
       this.tooltipBox.style.top = e.pageY + 20 + "px";
       this.tooltipBox.style.left = e.pageX + 20 + "px";
     },

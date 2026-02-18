@@ -1,5 +1,5 @@
 const dropDownMenu = () => {
-  const dropdownMenus = document.querySelectorAll("[data-dropdown");
+  const dropdownMenus = document.querySelectorAll("[data-dropdown]");
 
   const handleClick = (e) => {
     e.preventDefault();
