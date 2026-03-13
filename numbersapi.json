@@ -1,0 +1,27 @@
+[
+    {
+        "holiday": "Carnaval",
+        "description": "≈ 2 million people per day attend Rio street celebrations during Carnaval.",
+        "total": 2000000
+    },
+    {
+        "holiday": "Festa Junina",
+        "description": "Caruaru + Campina Grande festivals together attract around 24 million visitors annually (they claim to host the biggest São João festival in the world).",
+        "total": 24000000
+    },
+    {
+        "holiday": "Natal Brasileiro",
+        "description": "200+ million Christmas dinners nationwide",
+        "total": 210000000
+    },
+    {
+        "holiday": "Réveillon",
+        "description": "Copacabana hosts around 3 million people on New Year's Eve.",
+        "total": 3000000
+    },
+    {
+        "holiday": "Páscoa",
+        "description": "Brazil produces/sells over 12 million Easter eggs annually (industrial + artisanal combined easily goes beyond that).",
+        "total": 12000000
+    }
+]
